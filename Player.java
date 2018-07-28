@@ -40,39 +40,8 @@ public class Player
     //ジャンケンの手を出す
     public int showHand()
     {
-        // //プレイヤーの手
-        // int hand = 0;
-        // //０以上３未満の少数として乱数を得る
-        // double randomNum = Math.random() * 3;
-        // if (randomNum < 1) {
-        //     hand = STONE;
-        // }
-        // else if (randomNum < 2)
-        // {
-        //     hand = SCISSORS;
-        // }
-        // else if (randomNum < 3)
-        // {
-        //     hand = PAPER;
-        // }
-        //プレイヤーの手
-        int hand = 0;
-        //０以上３未満の少数として乱数を得る
-        int tacticsHand = Tactics.readTactics();
-
-        if (tacticsHand = 1) {
-            hand = STONE;
-        }
-        else if (tacticsHand = 2)
-        {
-            hand = SCISSORS;
-        }
-        else if (tacticsHand = 3)
-        {
-            hand = PAPER;
-        }
-
-
+        //与えられた戦術を読んでジャンケンの手を決める
+	int hand = tactics_.readTactics();
 
         //決定した手を戻り値として返す
         return hand;
