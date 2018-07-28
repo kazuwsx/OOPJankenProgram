@@ -13,7 +13,7 @@ public class ObjectJanken
         Player murata = new Player("村田さん");
 
         //村田さんに渡す戦略クラスを生成する
-        Tactics murataTactics = new RandomTactics();
+        Tactics murataTactics = new CyclicTactics();
 
         //村田さんに戦略クラスを渡す
         murata.setTactics(murataTactics);
@@ -22,7 +22,7 @@ public class ObjectJanken
         Player yamada = new Player("山田さん");
 
         //山田さんに渡す戦略クラスを生成
-        Tactics yamadaTactics = new RandomTactics();
+        Tactics yamadaTactics = new CyclicTactics();
 
         //山田さんに戦術クラスを渡す
         yamada.setTactics(yamadaTactics);

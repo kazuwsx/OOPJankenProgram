@@ -57,7 +57,7 @@ public class Judge
 
 
         printHand(player1hand);
-        System.out.println(" vs ");
+        System.out.print(" vs ");
         printHand(player2hand);
         System.out.print("\n");
 
